@@ -1,0 +1,144 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-rows: 2fr 5fr 5fr;
+    grid-template-areas: 
+    "sidebar header header"
+    "sidebar content side-content-top"
+    "sidebar content side-content-bottom";
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #eff6ff;
+    align-items: center;
+    grid-area: header;
+}
+
+.sidebar{
+    background-color: #3b82f6;
+    color: #eff6ff;
+    grid-area: sidebar;
+    padding: 20px;
+}
+
+.top-sidebar-links{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.content{
+    background-color: #bfdbfe;
+    grid-area: content;
+    padding: 20px;
+}
+
+.side-content-top{
+    background-color: #bfdbfe;
+    grid-area: side-content-top;
+    padding-top: 20px;
+}
+
+.side-content-bottom{
+    background-color: #bfdbfe;
+    grid-area: side-content-bottom;
+}
+
+.greeting {
+    margin-left: 20px;
+}
+
+.header-buttons {
+    height: 30px;
+    width: 72px;
+    border-radius: 10px;
+    background-color: #3b82f6;
+    color: #eff6ff;
+    margin: 10px;
+    
+}
+
+.account-info{
+    display: flex;
+    justify-content: right;
+    margin-right: 22px;
+}
+
+.search {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-box {
+    border-radius: 5px;
+    background-color: #dbeafe;
+    width: 100%;
+}
+
+.announcment-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #eff6ff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    height: 74%;
+    align-items: center;
+}
+
+.trending-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #eff6ff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    height: 68%;
+    align-items: center;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.content-card{
+    background-color: #eff6ff;
+    height: 200px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 98fr;
+    grid-template-areas: 
+    "content-card-color content-card-text";
+}
+
+.content-card-color {
+    grid-area: content-card-color;
+    background-color: #4ade80;
+    border-radius: 5px;
+    height: 98%;
+}
+
+.content-card-text {
+    grid-area: content-card-text;
+    padding: 10px;
+}
+
+h5 {
+    margin: 0;
+    padding: .25rem;
+    border: 0;
+}
+
+p {
+    margin: 0;
+    padding: .25rem;
+    border: 0;
+}
